@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstudLive - Skins</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        /* Barra superior */
+        header {
+            background-color: #ddd;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo span {
+            font-weight: bold;
+            font-size: 18px;
+            margin-left: 10px;
+        }
+
+        .icone-perfil,
+        .icone-favorito {
+            font-size: 20px;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+
+        /* Container principal */
+        .container {
+
+            display: flex;
+            height: calc(100vh - 60px);
+        }
+
+        /* Menu lateral */
+        .menu-lateral {
+            width: 200px;
+            background-color: white;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .menu-lateral ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-lateral li {
+            margin: 15px 0;
+            padding: 8px 10px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .menu-lateral li:hover,
+        .menu-lateral li.ativo {
+            background-color: #e4e4e4;
+        }
+
+        /* Área das skins */
+        .conteudo {
+            flex-grow: 1;
+            padding: 30px;
+            background-color: #fff;
+        }
+
+        .personagem-principal {
+            margin-top: 100px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .personagem-principal img {
+            width: 120px;
+        }
+
+        .grade-skins {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .skin {
+            background-color: #dcdcdc;
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .skin img {
+            width: 70px;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <div
+                style="background-color:#e0e0ff; border-radius:50%; width:30px; height:30px; display:flex; align-items:center; justify-content:center; font-weight:bold;">
+                E</div>
+            <span>EstudLive</span>
+        </div>
+        <div>
+            <span class="icone-favorito">⭐</span>
+            <span class="icone-perfil">👤</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Menu lateral -->
+        <nav class="menu-lateral">
+            <ul>
+                <a href="index.html"><li>Menu</li></a>
+                <li>Aprender</li>
+                <li class="ativo">Skins</li>
+                <li>Missões</li>
+                <li>PinGuia</li>
+                <li>Rank</li>
+                <li>Vídeo Curso</li>
+                <li>Meus Cursos</li>
+            </ul>
+        </nav>
+
+        <!-- Conteúdo das skins -->
+        <div class="conteudo">
+            <div class="personagem-principal">
+                <img src="https://i.imgur.com/tb7zX0K.png" alt="Personagem Principal">
+            </div>
+
+            <div class="grade-skins">
+                <div class="skin"><img src="https://i.imgur.com/tb7zX0K.png" alt="Skin Azul"></div>
+                <div class="skin"><img src="https://i.imgur.com/XP9R6tv.png" alt="Skin Rosa"></div>
+                <div class="skin"><img src="https://i.imgur.com/l8K5tRE.png" alt="Skin Laranja"></div>
+                <div class="skin"><img src="https://i.imgur.com/JvMIy2X.png" alt="Skin Verde"></div>
+                <div class="skin"></div>
+                <div class="skin"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
