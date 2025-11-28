@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title"> ESTUDLIVE </h1>
+      <h2> Cadastre-se </h2>
+      <h3> digite seu email: </h3>
+      <input>
+      <br>
+      <h3> Crie uma senha</h3>
+      <input type="password">
+      <br>
+      <h3> confirme sua senha </h3>
+      <input type="password">
+      <br><br><br>
+      <button>finalizar</button>
+
+    
+  </body>
+</html>
